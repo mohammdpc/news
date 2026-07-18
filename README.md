@@ -6,6 +6,22 @@ A cross‑platform news reader built with Flutter. It pulls live headlines from 
 
 ---
 
+## 📸 Screenshots
+
+| Home (Light) | Home (Dark) | App Drawer |
+|---|---|---|
+| ![Home screen, light theme](screenshots/home%20light.png) | ![Home screen, dark theme](screenshots/home%20dark.png) | ![App drawer with theme toggle](screenshots/drawer.png) |
+
+| Category Feed (Light) | Category Feed (Dark) | Search |
+|---|---|---|
+| ![Category article list, light theme](screenshots/news%20light.png) | ![Category article list, dark theme](screenshots/news%20dark.png) | ![Search results screen](screenshots/search.png) |
+
+| Article Card | Article Card (Expanded) |
+|---|---|
+| ![Compact article card](screenshots/card%20content.png) | ![Expanded article card](screenshots/card%20expanded.png) |
+
+---
+
 ## ✨ Features
 
 - **Browse by category** — General, Business, Sport, Technology, Entertainment, Health, and Science, each with its own icon/illustration.
@@ -161,6 +177,7 @@ These are observations from reading the current code, not necessarily bugs you a
 - **Unused model:** `lib/models/articles.dart` defines an `Article` class that doesn't appear to be used anywhere; `lib/models/news_data.dart` has its own separate `Articles` class that's the one actually used.
 - **No `.env`/secrets handling:** as noted above, the API key ships in plain text in the repository.
 - **No license file:** the repo doesn't currently include a `LICENSE` file — add one (MIT, Apache‑2.0, etc.) if you intend others to use or contribute to the code.
+- **Screenshot filenames contain spaces:** files under `screenshots/` (e.g. `home light.png`) use spaces rather than `snake_case`/`kebab-case`. This works but requires `%20` encoding in Markdown links; renaming to something like `home-light.png` would be more portable.
 
 ---
 
